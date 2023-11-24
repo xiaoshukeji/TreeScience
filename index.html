@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
+    <style class="vjs-styles-defaults">
+        .video-js {
+            width: 300px;
+            height: 150px;
+        }
+
+        .vjs-fluid {
+            padding-top: 56.25%
+        }
+    </style>
+    <style type="text/css" class="AMap.style">
+        .vml{behavior:url(#default#VML);display:inline-block;position:absolute}.amap-custom{top:0;left:0;position:absolute}.amap-container img{max-width:none!important;max-height:none!important}.amap-container{touch-action:none;position:relative;overflow:hidden;background:#fcf9f2 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0AgMAAAC2uDcZAAAADFBMVEX////////////////1pQ5zAAAABHRSTlMAgP/AWuZC2AAAAVhJREFUeAFiYGAQYGDEQjAB2rcDC4BiGIqiU7abdKlO2QkeIClyPsDHweMKtOPHIJ1Op6/w7Y4fdqfT6VpndzqdrnV2p9PpWmd3Oj3qWndSoKp+2J1Op7vr7E6n07XO7nQ6XevsTqfTtc7udPo4/f787E6n0911dqfT6VpndzqdrnV2p9PpWmd3Ot27Ce8m6HS6u85dR6fTtU7r6HS61mkdnU7XOrvT6XTvJuxOp9PddXan0+laZ3c6na51dDpd67SOTqd7N+HdBJ1Od9e56+h0utZpHZ1O1zq70+l0rbM7nU73bsLudDrdXWd3Ol3rtI5Op2ud1tHpdK3TOjqd7t2EdxN0Ot1dZ3c6na51dqfT6VpndzqdrnV2p9Pp3k3Q6XR3nbuOTqdrndbR6XSt0zo6na51Wken072bsDudTnfX2Z1Op2ud3el0utbZnU7XOq2j0+t0uncTD1gO4zoT5doZAAAAAElFTkSuQmCC);-ms-touch-action:none}.amap-drags,.amap-layers{width:100%;height:100%;position:absolute;overflow:hidden}.amap-layers canvas{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.amap-layer img{pointer-events:none}.amap-e,.amap-maps{width:100%;height:100%}.amap-maps,.amap-e,.amap-layers,.amap-tile,.amap-tile-container{position:absolute;left:0;top:0;overflow:hidden}.amap-context{position:absolute;left:0;top:0}.amap-overlays,.amap-markers,.amap-marker{position:absolute;left:0;top:0}.amap-layers{z-index:0}.amap-overlays{z-index:110;cursor:default}.amap-markers{z-index:120}.amap-controls{z-index:150}.amap-copyright{position:absolute;display:block!important;left:85px;height:16px;bottom:.1px;padding-bottom:3px;font-size:11px;font-family:Arial,sans-serif;z-index:160}.amap-logo{position:absolute;bottom:1.5px;left:4px;z-index:160;height:20px}.amap-logo img{width:73px!important;height:20px!important;border:0;vertical-align:baseline!important}.amap-icon{position:relative;z-index:1}.amap-icon img{position:absolute;z-index:-1}.amap-marker-label{position:absolute;z-index:2;border:1px solid blue;background-color:white;white-space:nowrap;cursor:default;padding:3px;font-size:12px;line-height:14px}.amap-info{position:absolute;left:0;z-index:140;width:320px}.amap-menu{position:absolute;z-index:140;_width:100px}.amap-info-close{position:absolute;right:5px;_right:12px;+right:11px;top:5px;_top:2px;+top:2px;color:#c3c3c3;text-decoration:none;font:bold 16px/14px Tahoma,Verdana,sans-serif;width:14px;height:14px}.amap-info-outer,.amap-menu-outer{box-shadow:0 1px 2px rgba(0,0,0,0.1);background:none repeat scroll 0 0 white;border-radius:2px;padding:1px;text-align:left}.amap-menu-outer:hover{box-shadow:0 1px 2px rgba(0,0,0,0.3)}.amap-info-contentContainer:hover .amap-info-outer{box-shadow:0 1px 2px rgba(0,0,0,0.3)}.amap-info-content{position:relative;background:#fff;padding:10px 18px 10px 10px;line-height:1.4;overflow:auto}.amap-marker-content{position:relative}.amap-info{_width:320px}.amap-menu{_width:100px}.amap-info-sharp-old{overflow:hidden;position:absolute;background-image:url(http://webapi.amap.com/images/arrows.png)}.bottom-center .amap-info-sharp-old{height:12px;margin:0 auto;width:20px;background-position:center 12px;top:100%;margin-top:-9px;left:50%;margin-left:-10px}.bottom-left .amap-info-sharp-old{height:12px;width:13px;background-position:-16px -46px;top:100%;margin-top:-9px}.bottom-right .amap-info-sharp-old{height:12px;width:13px;top:-1px;background-position:-56px -46px;left:100%;margin-left:-13px;top:100%;margin-top:-9px}.middle-left .amap-info-sharp-old{height:20px;width:12px;background-position:left;top:50%;margin-top:-10px;margin-left:-11px}.center .amap-info-sharp-old{display:none}.middle-right .amap-info-sharp-old{height:20px;margin-right:0;width:12px;background-position:right;left:100%;margin-left:-9px;top:50%;margin-top:-10px}.top-center .amap-info-sharp-old{height:12px;margin:0 auto;width:20px;background-position:top;top:0;margin-top:-3px;left:50%;margin-left:-10px}.top-left .amap-info-sharp-old{height:12px;width:13px;background-position:-16px -3px;top:0;margin-top:-3px}.top-right .amap-info-sharp-old{height:12px;width:13px;background-position:-56px -3px;left:100%;margin-left:-13px;top:0;margin-top:-3px}.amap-info-sharp{position:absolute}.bottom-center .amap-info-sharp{bottom:0;left:50%;margin-left:-8px;border-left:8px solid transparent;border-right:8px solid transparent;border-top:8px solid #fff}.bottom-center .amap-info-sharp:after{position:absolute;content:"";margin-left:-8px;margin-top:-7px;border-left:8px solid transparent;border-right:8px solid transparent;border-top:8px solid rgba(0,0,0,0.3);filter:blur(2px);z-index:-1}.amap-info-contentContainer:hover.bottom-center .amap-info-sharp:after{border-top:8px solid rgba(0,0,0,0.5)}.bottom-left .amap-info-sharp{border-color:transparent #fff;border-width:0 0 10px 10px;border-style:solid}.bottom-left .amap-info-sharp:after{position:absolute;content:"";margin-left:-10px;border-color:transparent rgba(0,0,0,0.3);border-width:0 0 10px 10px;border-style:solid;filter:blur(1px);z-index:-1}.amap-info-contentContainer:hover.bottom-left .amap-info-sharp:after{border-color:transparent rgba(0,0,0,0.5)}.bottom-left .amap-info-content{border-radius:2px 2px 2px 0}.bottom-right .amap-info-sharp{right:0;border-top:10px solid #fff;border-left:10px solid transparent}.bottom-right .amap-info-sharp:after{position:absolute;margin-top:-9px;margin-left:-10px;content:"";border-top:10px solid rgba(0,0,0,0.3);border-left:10px solid transparent;filter:blur(1px);z-index:-1}.amap-info-contentContainer:hover.bottom-right .amap-info-sharp:after{border-top:10px solid rgba(0,0,0,0.5)}.bottom-right .amap-info-content{border-radius:2px 2px 0 2px}.top-center .amap-info-sharp{top:0;left:50%;margin-left:-8px;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:8px solid #fff}.top-center .amap-info-sharp:after{position:absolute;content:"";margin-top:0;margin-left:-8px;border-left:8px solid transparent;border-right:8px solid transparent;border-bottom:8px solid rgba(0,0,0,0.3);filter:blur(1px);z-index:-1}.top-left .amap-info-sharp{left:0;top:0;border-bottom:10px solid #fff;border-right:10px solid transparent}.top-left .amap-info-sharp:after{position:absolute;content:"";margin-top:0;margin-left:0;border-bottom:10px solid rgba(0,0,0,0.3);border-right:10px solid transparent;filter:blur(1px);z-index:-1}.top-right .amap-info-sharp{right:0;top:0;border-bottom:10px solid #fff;border-left:10px solid transparent}.top-right .amap-info-sharp:after{position:absolute;content:"";margin-top:0;margin-left:-10px;border-bottom:10px solid rgba(0,0,0,0.3);border-left:10px solid transparent;filter:blur(1px);z-index:-1}.middle-right .amap-info-sharp{right:0;top:50%;margin-top:-8px;border-top:8px solid transparent;border-left:8px solid #fff;border-bottom:8px solid transparent}.middle-right .amap-info-sharp:after{position:absolute;content:"";margin-top:-8px;margin-left:-8px;border-top:8px solid transparent;border-left:8px solid rgba(0,0,0,0.3);border-bottom:8px solid transparent;filter:blur(1px);z-index:-1}.amap-info-contentContainer:hover.middle-right .amap-info-sharp:after{border-left:8px solid rgba(0,0,0,0.5)}.middle-left .amap-info-sharp{left:0;top:50%;margin-top:-8px;border-top:8px solid transparent;border-right:8px solid #fff;border-bottom:8px solid transparent}.middle-left .amap-info-sharp:after{position:absolute;content:"";margin-top:-8px;margin-left:0;border-top:8px solid transparent;border-right:8px solid rgba(0,0,0,0.3);border-bottom:8px solid transparent;filter:blur(1px);z-index:-1}.amap-info-contentContainer:hover.middle-left .amap-info-sharp:after{border-right:8px solid rgba(0,0,0,0.5)}.amap-info-contentContainer.top-left,.amap-info-contentContainer.top-center,.amap-info-contentContainer.top-right{padding-top:8px}.amap-info-contentContainer.bottom-left,.amap-info-contentContainer.bottom-center,.amap-info-contentContainer.bottom-right{padding-bottom:8px}.amap-info-contentContainer.middle-right{padding-right:8px}.amap-info-contentContainer.middle-left{padding-left:8px}.amap-menu-outer{margin:0;padding:0;list-style-type:none}ul.amap-menu-outer li{cursor:pointer;height:35px;line-height:35px;word-break:break-all;padding:0 10px;font-size:12px;white-space:nowrap}ul.amap-menu-outer li a{text-decoration:none;font-size:13px;margin:0 5px;color:#000;padding:5px 5px}ul.amap-menu-outer li:hover{background-color:#f3f3ee}.amap-overlay-text-container{display:block;width:auto;word-break:keep-all;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;background:#fff;padding:2px 3px;border:1px solid #ccc;border-radius:3px}.amap-overlay-text-container.amap-overlay-text-empty{display:none}.amap-info-content-ie8{border:1px solid #9c9c9c}
+    </style>
+    <style type="text/css">
+        .amap-logo{display:block!important;pointer-events:none;}
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta property="og:title" content="树科学">
@@ -11,187 +27,369 @@
     <meta name="DEscription" contect="小树科技网络安全有限公司旗下的青少年电脑编程考试模拟网站">
     <title>树科学</title>
     <link rel="icon" href="./favicon.ico">
-    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://www.liankexue.cn/css/chunk-03e242d8.3edf808e.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-0d91c5b8.ab5bd1e9.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-15499130.f6f01e2b.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-16a582ec.eaaa8c5a.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-19507f86.da45d126.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-1c5fe553.918e239d.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-1e644695.5fcc408d.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-212ffce6.66df9750.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-291eb5fc.87ed94de.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-2934628d.5d99df71.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-2a7ae91c.fcf662aa.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-2ae6e214.95f7589e.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-2b2d9980.281d2bfc.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-2c7481bc.360b6408.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-377d6be2.e34941c8.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-3c667a42.6f4f03d1.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-3dfbd591.f2662fbe.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-441a9079.d3b4e5b2.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-471b9ddd.6c239042.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-47645f60.2308a4bc.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-4a4c4f50.6026cbe8.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-4c6fe644.76268dc7.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-5084a4ba.17160b75.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-52b13d60.50c62d6c.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-58ccf23e.f418a1e4.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-5c5740f8.601e0db3.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-5cd82e4d.c0bec952.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-6104f816.eb156300.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-6b02cf2e.ca1bb6df.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-6ec10dbd.d4df74c0.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-776b1f54.af0d6ee1.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-7802f6a2.fa20963c.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-785f6574.4ec2a2f9.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-78a50d6b.f69393eb.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-79c36e6a.17160b75.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-861480bc.5636f4d0.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-8cc3f97e.53143d78.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-8cf4537c.7a808f51.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-8fc5053c.d4df74c0.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-90ba2f1e.f78635cb.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-9644e10c.4ec2a2f9.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-ae94bfe2.56503136.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-ddbb948e.bef24910.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-e5233836.d6e1f925.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-ef60c996.43d451d7.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-f062edee.61041845.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/chunk-fe2b2106.ddd08003.css" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-03e242d8.2d8e3c42.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-0d91c5b8.4f3238f7.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-120f45c0.7e9625a9.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-15499130.b68254ec.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-16a582ec.5175a195.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-19507f86.c796d931.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-1c5fe553.95031b4c.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-1e644695.78d50999.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-212ffce6.7fd08c54.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-291eb5fc.fa0bea84.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-2934628d.350c4612.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-2a7ae91c.9788f33f.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-2ae6e214.458eb3e5.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-2b2d9980.b8dad707.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-2c7481bc.207a391a.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-377d6be2.f779fa5e.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-3c667a42.725f1752.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-3dfbd591.bebf8a7a.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-441a9079.f4d4b649.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-471b9ddd.3f621d3f.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-47645f60.e5f3c159.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-4a4c4f50.d4e2e874.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-4c6fe644.a38284dc.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-5084a4ba.60c1c741.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-52b13d60.8e50a87b.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-58ccf23e.46f9f5ba.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-5c5740f8.6ec1b13a.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-5cd82e4d.aafc3487.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-6104f816.6304222c.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-6b02cf2e.01d394b4.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-6ec10dbd.3151f00c.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-7298ee5e.0d350642.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-776b1f54.cdc95c48.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-7802f6a2.c06176e6.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-785f6574.2297377b.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-78a50d6b.fe5c816b.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-79c36e6a.061ef5b9.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-7a1bb30c.2cb90f16.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-861480bc.9a741de8.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-8cc3f97e.987e9d06.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-8cf4537c.dc650eed.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-8fc5053c.e9d7df69.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-90ba2f1e.131e9bea.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-9644e10c.9af2134b.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-ae94bfe2.ced3aa29.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-ddbb948e.d39b8bd4.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-e5233836.ce120acb.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-ef60c996.95f848a3.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-f062edee.c14353f0.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/js/chunk-fe2b2106.e397d1dd.js" rel="prefetch">
+    <link href="https://www.liankexue.cn/css/app.c6244746.css" rel="preload" as="style">
+    <link href="https://www.liankexue.cn/css/chunk-vendors.86cef07f.css" rel="preload" as="style">
+    <link href="https://www.liankexue.cn/js/app.2dce759c.js" rel="preload" as="script">
+    <link href="https://www.liankexue.cn/js/chunk-vendors.21440eed.js" rel="preload" as="script">
+    <link href="https://www.liankexue.cn/css/chunk-vendors.86cef07f.css" rel="stylesheet">
+    <link href="https://www.liankexue.cn/css/app.c6244746.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://www.liankexue.cn/css/chunk-ae94bfe2.56503136.css">
+    <script charset="utf-8" src="https://www.liankexue.cn/js/chunk-ae94bfe2.ced3aa29.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.liankexue.cn/css/chunk-3dfbd591.f2662fbe.css">
+    <script charset="utf-8" src="https://www.liankexue.cn/js/chunk-3dfbd591.bebf8a7a.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.liankexue.cn/css/chunk-3c667a42.6f4f03d1.css">
+    <script charset="utf-8" src="https://www.liankexue.cn/js/chunk-3c667a42.725f1752.js"></script>
+    <style type="text/css">
+        .advc{
+            text-decoration: none;
+            color: #000000;
+        }
+        .advc1{
+            text-decoration: none;
+            color: #0a53be;
+        }
+        .advcw{
+            text-decoration: none;
+            color: #ffffff;
+        }
+    </style>
 </head>
 <body>
-<style type="text/css">
-    .Set-div80{
-        width: 80%;
-    }
-    .Set-div60{
-        width: 60%;
-    }
-    @font-face {
-        font-family: HYZhengYuan-75W;
-        src: url(https://xiaoshukeji.ltd/file/HYZhengYuan-75W.ttf);
-    }
-    .advc{
-        text-decoration: none;
-        color: #000000;
-    }
-</style>
-<nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #e3f2fd;">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="https://xiaoshukeji.ltd/TreeScience"><img src="https://xiaoshukeji.ltd/file/Smalltreenetwork.png" alt="小树科技" width="200px"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="https://xiaoshukeji.ltd/TreeScience/">首页</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./testSystem.html">考试报名</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./Login.html">考级题库</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./Service.html">服务网点</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <a href="./Login.html" class="btn btn-outline-success" type="submit">登录</a>
-            </form>
+<div id="app" class="app-contain">
+    <div class="layout-contain">
+        <div class="layout-content">
+            <div class="layout-header">
+                <div>
+                    <!---->
+                    <div class="header">
+                        <div class="header-logo-box">
+                            <img src="https://xiaoshukeji.ltd/file/Smalltreenetwork.png" alt="" class="header-logo" width="200px">
+                        </div>
+                        <div class="header-nav-box">
+                            <span class="header-nav-title"><a class="advc1" href="https://xiaoshukeji.ltd/TreeScience/">首页</a></span>
+                            <div class="header-nav-line"></div>
+                        </div>
+                        <div class="header-nav-box">
+                            <span class="header-nav-title-gray"><a class="advc" href="./testSystem.html">考试报名</a></span>
+                            <div class="header-nav-line-gray"></div>
+                        </div>
+                        <div class="header-nav-box">
+                            <span class="header-nav-title-gray"><a class="advc" href="./Login.html">考级题库</a></span>
+                            <div class="header-nav-line-gray"></div>
+                        </div>
+                        <div class="header-nav-box" style="margin-right: 40px;">
+                            <span class="header-nav-title-gray"><a class="advc" href="./Service.html">服务网点</a></span>
+                            <div class="header-nav-line-gray"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 100px;"></div>
+            <div style="width: 100%;">
+                <div>
+                    <div class="home-swipe-box">
+                        <div class="home-swiper el-carousel el-carousel--horizontal" style="">
+                            <div class="el-carousel__container" style="height: 400px;">
+                                <button type="button" class="el-carousel__arrow el-carousel__arrow--left" style="display: none;">
+                                    <i class="el-icon-arrow-left"></i>
+                                </button>
+                                <button type="button" class="el-carousel__arrow el-carousel__arrow--right" style="display: none;">
+                                    <i class="el-icon-arrow-right"></i>
+                                </button>
+                                <div class="el-carousel__item is-animating" style="transform: translateX(-1241px) scale(1);">
+                                    <!---->
+                                    <img src="https://liankexue.cn:443/linkscience/linkscience/1692865493800893978.jpg" class="home-banner">
+                                </div>
+                                <div class="el-carousel__item is-active is-animating" style="transform: translateX(0px) scale(1);">
+                                    <!---->
+                                    <img src="http://www.liankexue.cn:80/linkscience/linkscience/1599113896258227458.JPG" class="home-banner">
+                                </div>
+                                <div class="el-carousel__item" style="transform: translateX(1241px) scale(1);">
+                                    <!---->
+                                    <img src="https://liankexue.cn:443/linkscience/linkscience/1640074746768470972.jpg" class="home-banner">
+                                </div>
+                            </div>
+                            <ul class="el-carousel__indicators el-carousel__indicators--horizontal">
+                                <li class="el-carousel__indicator el-carousel__indicator--horizontal">
+                                    <button class="el-carousel__button">
+                                        <!---->
+                                    </button>
+                                </li>
+                                <li class="el-carousel__indicator el-carousel__indicator--horizontal is-active">
+                                    <button class="el-carousel__button">
+                                        <!---->
+                                    </button>
+                                </li>
+                                <li class="el-carousel__indicator el-carousel__indicator--horizontal">
+                                    <button class="el-carousel__button">
+                                        <!---->
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div style="display: none;">
+                            <video src="https://liankexue.cn:443/linkscience/linkscience/1692865493800893978.jpg" autoplay="autoplay" muted="muted" style="height: 75vh; width: 100%; object-fit: cover; min-width: 1200px;"></video>
+                        </div>
+                    </div>
+                    <div class="home-select-box">
+                        <div class="home-select-solid"></div>
+                        <div class="home-select-bottom">
+                            <img src="https://liankexue.cn:443/linkscience/linkscience/1618452653946563790.jpg" alt="">
+                            <div class="home-select-bottom-right">
+                                <div class="home-select-bottom-title"> 全国青少年机器人技术等级考试 </div>
+                                <div class="home-select-bottom-text"> 全国青少年机器人技术等级考试是由中国电子学会于2015年启动的面向青少年机器人技术能力水平的社会化评价项目，它不仅仅是传播新一代信息技术的科普活动，也是为广大的青少年机器人爱好者提供了一个规范、权威、专业的认证体系和晋级通道。 </div>
+                                <div style="display: flex;">
+                                    <div class="home-select-bottom-bm"><a class="advcw" href="https://www.qceit.org.cn/bos/default.html">点击报名</a> </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-tech-box">
+                        <div class="home-news-title-box">
+                            <span>汇集全球学者</span>
+                        </div>
+                        <div>
+                            <div id="teacherList">
+                                <div class="teacherList-item-box">
+                                    <div class="teacherList-item">
+                                        <div class="home-tech-item-img-box">
+                                            <img src="https://www.liankexue.cn:443/linkscience/linkscience/1604476102253261055.png" alt="" class="home-tech-item-img">
+                                            <div title="韩江洪" style="font-size: 24px; line-height: 50px; color: rgb(51, 51, 51); width: 100%; text-align: center; text-overflow: ellipsis; overflow: hidden;"> 韩江洪 </div>
+                                            <div title="合肥工业大学原副校长" style="height: 55px; font-size: 16px; line-height: 30px; color: rgb(153, 153, 153); width: 100%; text-align: center; text-overflow: ellipsis; overflow: hidden;"> 合肥工业大学原副校长 </div>
+                                            <div style="width: 120px; height: 1px; background-color: rgb(229, 229, 229); margin-top: 20px;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="teacherList-item">
+                                        <div class="home-tech-item-img-box">
+                                            <img src="https://www.liankexue.cn:443/linkscience/linkscience/1604475249871976547.png" alt="" class="home-tech-item-img">
+                                            <div title="丁慧清" style="font-size: 24px; line-height: 50px; color: rgb(51, 51, 51); width: 100%; text-align: center; text-overflow: ellipsis; overflow: hidden;"> 丁慧清 </div>
+                                            <div title="青少年等级考试专家组成员" style="height: 55px; font-size: 16px; line-height: 30px; color: rgb(153, 153, 153); width: 100%; text-align: center; text-overflow: ellipsis; overflow: hidden;"> 青少年等级考试专家组成员 </div>
+                                            <div style="width: 120px; height: 1px; background-color: rgb(229, 229, 229); margin-top: 20px;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="teacherList-item">
+                                        <div class="home-tech-item-img-box">
+                                            <img src="https://www.liankexue.cn:443/linkscience/linkscience/1604476973434289804.jpg" alt="" class="home-tech-item-img">
+                                            <div title="胡波" style="font-size: 24px; line-height: 50px; color: rgb(51, 51, 51); width: 100%; text-align: center; text-overflow: ellipsis; overflow: hidden;"> 胡波 </div>
+                                            <div title="中国青少年机器人竞赛优秀教练员" style="height: 55px; font-size: 16px; line-height: 30px; color: rgb(153, 153, 153); width: 100%; text-align: center; text-overflow: ellipsis; overflow: hidden;"> 中国青少年机器人竞赛优秀教练员 </div>
+                                            <div style="width: 120px; height: 1px; background-color: rgb(229, 229, 229); margin-top: 20px;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="teacherList-item">
+                                        <div class="home-tech-item-img-box">
+                                            <img src="https://www.liankexue.cn:443/linkscience/linkscience/1604476896841265037.png" alt="" class="home-tech-item-img">
+                                            <div title="张金苗" style="font-size: 24px; line-height: 50px; color: rgb(51, 51, 51); width: 100%; text-align: center; text-overflow: ellipsis; overflow: hidden;"> 张金苗 </div>
+                                            <div title="合肥市信息学竞赛带头人" style="height: 55px; font-size: 16px; line-height: 30px; color: rgb(153, 153, 153); width: 100%; text-align: center; text-overflow: ellipsis; overflow: hidden;"> 合肥市信息学竞赛带头人 </div>
+                                            <div style="width: 120px; height: 1px; background-color: rgb(229, 229, 229); margin-top: 20px;"></div>
+                                        </div>
+                                    </div>
+                                    <div class="teacherList-item">
+                                        <div class="home-tech-item-img-box">
+                                            <img src="https://www.liankexue.cn:443/linkscience/linkscience/1604473064928351583.png" alt="" class="home-tech-item-img">
+                                            <div title="方林" style="font-size: 24px; line-height: 50px; color: rgb(51, 51, 51); width: 100%; text-align: center; text-overflow: ellipsis; overflow: hidden;"> 方林 </div>
+                                            <div title="合肥市十佳优秀科技辅导员" style="height: 55px; font-size: 16px; line-height: 30px; color: rgb(153, 153, 153); width: 100%; text-align: center; text-overflow: ellipsis; overflow: hidden;"> 合肥市十佳优秀科技辅导员 </div>
+                                            <div style="width: 120px; height: 1px; background-color: rgb(229, 229, 229); margin-top: 20px;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-tech-box" style="height: auto;">
+                        <div class="home-news-title-box">
+                            <span>合作单位</span>
+                        </div>
+                    </div>
+                    <div class="company-box">
+                        <div class="company-box-item">
+                            <div style="box-shadow: rgba(144, 177, 239, 0.2) 0px 0px 12px 0px;">
+                                <img alt="" class="company-box-item-img" src="https://www.liankexue.cn:443/linkscience/linkscience/1604625157120136869.jpg">
+                            </div>
+                        </div>
+                        <div class="company-box-item">
+                            <div style="box-shadow: rgba(144, 177, 239, 0.2) 0px 0px 12px 0px;">
+                                <img alt="" class="company-box-item-img" src="https://www.liankexue.cn:443/linkscience/linkscience/1604625532499826398.jpg">
+                            </div>
+                        </div>
+                        <div class="company-box-item">
+                            <div style="box-shadow: rgba(144, 177, 239, 0.2) 0px 0px 12px 0px;">
+                                <img alt="" class="company-box-item-img" src="https://www.liankexue.cn:443/linkscience/linkscience/1604625585998970702.jpg">
+                            </div>
+                        </div>
+                        <div class="company-box-item">
+                            <div style="box-shadow: rgba(144, 177, 239, 0.2) 0px 0px 12px 0px;">
+                                <img alt="" class="company-box-item-img" src="https://www.liankexue.cn:443/linkscience/linkscience/1604625147611814621.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="home-all-style">
+                        <div class="all-style-top">
+                            <div class="style-top">
+                                <div class="sytle-title">合作机构</div>
+                                <div class="sytle-math">500+</div>
+                            </div>
+                            <div class="style-top">
+                                <div class="sytle-title">注册用户</div>
+                                <div class="sytle-math">5000+</div>
+                            </div>
+                            <div class="style-top">
+                                <div class="sytle-title">课程数量</div>
+                                <div class="sytle-math">500+</div>
+                            </div>
+                            <div class="style-top">
+                                <div class="sytle-title">累计学习次数</div>
+                                <div class="sytle-math">260000+</div>
+                            </div>
+                        </div>
+                        <div class="all-style-bottom">
+                            <div class="style-bottom-left">
+                                <div class="style-bottom-gang"></div>
+                                <div class="style-bottom-text">科普产品国家地方联合工程研究中心（以下简称科普中心）作为中国电子学会在小树科技的考试服务中心，一直致力于将更好更优质的服务提供给大家。自开展等级考试以来，我们收到了很多来自全省教培行业从业者以及参加等级考试的考生反馈，希望能有一个考试服务平台，来帮助他们更好的掌握考级专业知识，了解行业发展动向等。
+                                    在此驱动之下，小树科技作为科普中心打造的首款数字化网络服务平台应运而生，我们的目的是致力于为全省的科技教培机构、中小学生提供一个全方位的等级考试服务平台。</div>
+                                <div class="style-bottom-down">
+                                    <div class="style-top">
+                                        <div class="sytle-title">今日考试人次</div>
+                                        <div class="sytle-math">1000+</div>
+                                    </div>
+                                    <div class="style-top" style="margin-left: 200px;">
+                                        <div class="sytle-title">今日学习人数</div>
+                                        <div class="sytle-math">5188</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="style-bottom-right">
+                                <img src="https://liankexue.cn/img/home-map.f9247d20.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 100%;">
+                <div data-v-5f5c116b="" class="footer">
+                    <div data-v-5f5c116b="" class="about-box">
+                        <span data-v-5f5c116b="" class="about-box-title"><a class="advcw" href="https://xiaoshukeji.ltd/TreeScience/">首页</a></span>
+                        <span data-v-5f5c116b="" class="about-box-title"><a class="advcw" href="./testSystem.html">考试报名</a></span>
+                        <span data-v-5f5c116b="" class="about-box-title"><a class="advcw" href="./Login.html">考级题库</a></span>
+                        <span data-v-5f5c116b="" class="about-box-title"><a class="advcw" href="./Service.html">服务网点</a></span>
+                        <div data-v-5f5c116b="" class="qrcode-box" style="">
+									<span data-v-5f5c116b="">
+										<div role="tooltip" id="el-popover-4536" aria-hidden="true" class="el-popover el-popper" tabindex="0" style="display: none;">
+											<!---->
+											<img data-v-5f5c116b="" src="https://www.liankexue.cn/img/code.97328912.jpg" class="qrcode" style="width: 200px; height: 200px;">
+										</div>
+									</span>
+                        </div>
+                    </div>
+                    <div data-v-5f5c116b="" class="introduce-box">
+                        <a data-v-5f5c116b="" href="https://xiaoshukeji.ltd" target="_blank" class="introduce-text">友情链接：小树科技网络安全有限公司</a>
+                        <span data-v-5f5c116b="" class="introduce-text">版权所有：小树科技网络安全有限公司 未经书面授权禁止使用 猛ICP备100000000号-1</span>
+                        <div data-v-5f5c116b="">
+                            <span data-v-5f5c116b="" class="introduce-text" style="margin-right: 40px;">电话：13191486995</span>
+                            <span data-v-5f5c116b="" class="introduce-text">地址：中国</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="layout-bg"></div>
     </div>
-</nav>
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="https://liankexue.cn/linkscience/linkscience/1692865493800893978.jpg" alt="Page1"><rect width="100%" height="100%" fill="#777"/>
-        </div>
-        <div class="carousel-item">
-            <img class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="http://www.liankexue.cn/linkscience/linkscience/1599113896258227458.JPG" alt="Page2"><rect width="100%" height="100%" fill="#777"/>
-        </div>
-        <div class="carousel-item">
-            <img class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" src="https://liankexue.cn/linkscience/linkscience/1640074746768470972.jpg" alt="Page3"><rect width="100%" height="100%" fill="#777"/>
-        </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-    </button>
 </div>
-<div class="album py-5 bg-light">
-    <center><span style="color: #006606;"><h1>合作单位</h1></span></br></br></center>
-    <div class="container">
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 row-cols-md-4 g-4">
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="https://www.liankexue.cn/linkscience/linkscience/1604625157120136869.jpg" alt="中国电子学会">
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="https://www.liankexue.cn/linkscience/linkscience/1604625532499826398.jpg" alt="合肥工业大学">
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="https://www.liankexue.cn/linkscience/linkscience/1604625585998970702.jpg" alt="安徽大学">
-                </div>
-            </div>
-            <div class="col">
-                <div class="card shadow-sm">
-                    <img src="https://www.liankexue.cn/linkscience/linkscience/1604625147611814621.jpg" alt="中国科学技术大学">
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<center>
-    <div class="Set-div80">
-        <div class="row row-cols-1 row-cols-md-4 mb-4 text-center">
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">合作机构</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title">500+</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">注册用户</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title">5000+</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">课程数量</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title">500+</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                    <div class="card-header py-3 text-bg-primary border-primary">
-                        <h4 class="my-0 fw-normal">累计学习次数</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title">260000+</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h4 class="Set-div60" style="font-family: HYZhengYuan-75W">科普产品国家地方联合工程研究中心（以下简称科普中心）作为中国电子学会在小树科技的考试服务中心，一直致力于将更好更优质的服务提供给大家。自开展等级考试以来，我们收到了很多来自全省教培行业从业者以及参加等级考试的考生反馈，希望能有一个考试服务平台，来帮助他们更好的掌握考级专业知识，了解行业发展动向等。 在此驱动之下，链科学作为科普中心打造的首款数字化网络服务平台应运而生，我们的目的是致力于为全省的科技教培机构、中小学生提供一个全方位的等级考试服务平台。</h4>
-        <div class="row row-cols-1 row-cols-md-4 mb-4 text-center">
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">今日考试人次</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title">1000+</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm">
-                    <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">今日学习人数</h4>
-                    </div>
-                    <div class="card-body">
-                        <h1 class="card-title pricing-card-title">1000+</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</center>
-<footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
-    <center>
-        <h5>
-            <a class="advc" href="https://xiaoshukeji.ltd/TreeScience">首页</a>&emsp;&emsp;&emsp;&emsp;&emsp;
-            <a class="advc" href="./testSystem.html">考试报名</a> &emsp;&emsp;&emsp;&emsp;&emsp;
-            <a class="advc" href="./Login.html">考级题库</a> &emsp;&emsp;&emsp;&emsp;&emsp;
-            <a class="advc" href="./Service.html">服务网点</a>
-        </h5></br></br>
-        <p>友情链接：<a class="advc" href="https://xiaoshukeji.ltd">小树科技网络安全有限公司</a></br>
-            版权所有：小树科技网络安全有限公司 未经书面授权禁止使用 蒙ICP备00000000号-0</br>
-            电话：13191486995 地址：银河系，地球，中国</p>
-    </center>
-</footer>
 </body>
-<script src="https://cdn.staticfile.org/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </html>
